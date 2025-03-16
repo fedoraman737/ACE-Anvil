@@ -37,9 +37,9 @@ modded class SCR_CharacterHealthHitZone : SCR_HitZone
 			return effectiveDamage;
 		
 		SCR_CharacterHitZone hitZone = SCR_CharacterHitZone.Cast(damageContext.struckHitZone);
-		if (hitZone && !m_pACE_Medical_DamageManager.ACE_Medical_WasSecondChanceTrigged())
+		if (hitZone && !m_pACE_Medical_DamageManager.ACE_Medical_WasSetSecondChanceTriggered())
 		{
-			m_pACE_Medical_DamageManager.ACE_Medical_SetSecondChanceTrigged(true);
+			m_pACE_Medical_DamageManager.ACE_Medical_SetSecondChanceTriggered(true);
 			// Add bleeding to the hit zone that triggered second chance
 			m_pACE_Medical_DamageManager.AddBleedingEffectOnHitZone(hitZone, damageContext.colliderID);
 		}

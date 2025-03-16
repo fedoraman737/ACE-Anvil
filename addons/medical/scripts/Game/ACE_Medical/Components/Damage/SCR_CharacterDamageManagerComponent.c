@@ -174,14 +174,14 @@ modded class SCR_CharacterDamageManagerComponent : SCR_DamageManagerComponent
 	
 	//------------------------------------------------------------------------------------------------
 	//! To be set true when second chance was used
-	void ACE_Medical_SetSecondChanceTrigged(bool isTriggered)
+	void ACE_Medical_SetSecondChanceTriggered(bool isTriggered)
 	{
 		m_bACE_Medical_SecondChanceTriggered = isTriggered;
 	}
 	
 	//------------------------------------------------------------------------------------------------
 	//! Check if second chance was used
-	bool ACE_Medical_WasSecondChanceTrigged()
+	bool ACE_Medical_WasSetSecondChanceTriggered()
 	{
 		return m_bACE_Medical_SecondChanceTriggered;
 	}

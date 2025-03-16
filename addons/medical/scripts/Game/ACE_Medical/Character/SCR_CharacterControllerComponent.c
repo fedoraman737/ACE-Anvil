@@ -35,7 +35,7 @@ modded class SCR_CharacterControllerComponent : CharacterControllerComponent
 			{
 				GetGame().GetCallqueue().Remove(m_pACE_Medical_DamageManager.ACE_Medical_EnableSecondChance);
 				m_pACE_Medical_DamageManager.ACE_Medical_EnableSecondChance(true);
-				m_pACE_Medical_DamageManager.ACE_Medical_SetSecondChanceTrigged(false);
+				m_pACE_Medical_DamageManager.ACE_Medical_SetSecondChanceTriggered(false);
 				break;
 			}
 			
